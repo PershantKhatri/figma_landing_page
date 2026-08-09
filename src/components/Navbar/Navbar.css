@@ -34,7 +34,7 @@
 .nav-container {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 18px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,15 +43,17 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
   color: #1e293b;
   letter-spacing: 0.5px;
 }
 
 .nav-logo svg {
+  width: 28px;
+  height: 28px;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -105,7 +107,7 @@
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .nav-icons button,
@@ -114,8 +116,8 @@
   border: 1px solid var(--icon-border);
   cursor: pointer;
   color: var(--icon-color);
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -137,29 +139,45 @@
 
 .menu-toggle {
   display: none !important;
+  background: none;
+  border: none;
+  cursor: pointer;
   z-index: 1001;
 }
 
-@media (max-width: 576px) {
+/* Tablet aur Mobile Screens ke liye responsive adjustments */
+@media (max-width: 768px) {
   .nav-container {
-    padding: 15px 20px;
+    padding: 14px 20px;
+  }
+
+  .nav-logo {
+    font-size: 22px;
+  }
+
+  .nav-logo svg {
+    width: 24px;
+    height: 24px;
   }
 
   .menu-toggle {
     display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 80%;
+    width: 75%;
+    max-width: 300px;
     height: 100vh;
     background: linear-gradient(135deg, var(--nav-bg-start) 0%, var(--nav-bg-mid) 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 30px;
     box-shadow: -15px 0 40px rgba(0, 0, 0, 0.1);
     transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
     z-index: 1000;
@@ -170,7 +188,7 @@
   }
 
   .nav-links a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .nav-icons {
