@@ -1,0 +1,125 @@
+
+.inspiration-section {
+  width: 100%;
+  padding: 80px 40px;
+  background: #fcf8f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1440px;
+  margin: 80px auto;
+}
+
+.inspiration-text {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Multi-color Gradient Heading */
+.inspiration-text h2 {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+
+.inspiration-text p {
+  color: #616161;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Attractive Gradient Button */
+.explore-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-weight: 800;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.explore-btn:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.45);
+}
+
+.inspiration-slider {
+  flex: 2;
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.inspiration-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.inspire-card {
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.inspire-card:hover {
+  transform: translateY(-5px);
+}
+
+.inspire-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspire-tag {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.inspire-tag span {
+  font-size: 14px;
+  color: #616161;
+  font-weight: 600;
+}
+
+.inspire-tag h4 {
+  font-size: 22px;
+  color: #3a3a3a;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.inspire-card.secondary {
+  min-width: 250px;
+}
+
+@media (max-width: 900px) {
+  .inspiration-section {
+    flex-direction: column;
+  }
+}
