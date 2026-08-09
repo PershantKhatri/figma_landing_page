@@ -13,7 +13,7 @@ import './App.css';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/figma_landing_page">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
