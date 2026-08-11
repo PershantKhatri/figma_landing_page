@@ -137,15 +137,24 @@
   box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
 }
 
+/* Menu Toggle Button (Hamburger) */
 .menu-toggle {
-  display: none !important;
+  display: none;
   background: none;
-  border: none;
+  border: 1px solid var(--icon-border);
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1002;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  font-size: 20px;
+  background: linear-gradient(135deg, var(--icon-bg-start) 0%, var(--icon-bg-end) 100%);
 }
 
-/* Tablet aur Mobile Screens ke liye responsive adjustments */
+
 @media (max-width: 768px) {
   .nav-container {
     padding: 14px 20px;
@@ -162,25 +171,23 @@
 
   .menu-toggle {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
   }
 
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 75%;
-    max-width: 300px;
+    width: 80%;
+    max-width: 320px;
     height: 100vh;
-    background: linear-gradient(135deg, var(--nav-bg-start) 0%, var(--nav-bg-mid) 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.1);
+    gap: 25px;
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.15);
     transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-    z-index: 1000;
+    z-index: 1001;
   }
 
   .nav-links.active {
@@ -192,7 +199,7 @@
   }
 
   .nav-icons {
-    gap: 10px;
+    gap: 8px;
   }
 
   .nav-icons button,
