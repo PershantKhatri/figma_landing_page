@@ -3,14 +3,11 @@
   --nav-bg-mid: #f8fafc;
   --nav-bg-end: #f1f5f9;
   --nav-border: #e2e8f0;
-  
   --logo-text-start: #6366f1;
   --logo-text-mid: #7c3aed;
   --logo-text-end: #8b5cf6;
-  
   --link-color: #475569;
   --link-hover: #6366f1;
-  
   --icon-bg-start: #f8fafc;
   --icon-bg-end: #f1f5f9;
   --icon-border: #e2e8f0;
@@ -137,38 +134,38 @@
   box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
 }
 
-/* Default Desktop par Hamburger Hidden rahega */
 .menu-toggle {
   display: none !important;
 }
 
-/* Tablet aur Mobile Screens ke liye responsive adjustments */
 @media (max-width: 768px) {
   .nav-container {
-    padding: 14px 20px;
+    padding: 12px 12px;
   }
 
   .nav-logo {
-    font-size: 22px;
+    font-size: 19px;
+    gap: 6px;
   }
 
   .nav-logo svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 
-  /* Mobile screen par hamburger/close toggle show hoga */
   .menu-toggle {
     display: flex !important;
     z-index: 1002;
+    width: 32px;
+    height: 32px;
   }
 
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 80%;
-    max-width: 320px;
+    width: 75%;
+    max-width: 280px;
     height: 100vh;
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     flex-direction: column;
@@ -189,12 +186,17 @@
   }
 
   .nav-icons {
-    gap: 8px;
+    gap: 5px;
   }
 
   .nav-icons button,
   .nav-icons a {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-icons svg {
+    width: 16px;
+    height: 16px;
   }
 }
