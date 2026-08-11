@@ -137,24 +137,12 @@
   box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
 }
 
-/* Menu Toggle Button (Hamburger) */
+/* Default Desktop par Hamburger Hidden rahega */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: 1px solid var(--icon-border);
-  cursor: pointer;
-  z-index: 1002;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  color: var(--icon-color);
-  font-size: 20px;
-  background: linear-gradient(135deg, var(--icon-bg-start) 0%, var(--icon-bg-end) 100%);
+  display: none !important;
 }
 
-
+/* Tablet aur Mobile Screens ke liye responsive adjustments */
 @media (max-width: 768px) {
   .nav-container {
     padding: 14px 20px;
@@ -169,8 +157,10 @@
     height: 24px;
   }
 
+  /* Mobile screen par hamburger/close toggle show hoga */
   .menu-toggle {
     display: flex !important;
+    z-index: 1002;
   }
 
   .nav-links {
