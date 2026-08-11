@@ -200,3 +200,35 @@
     height: 16px;
   }
 }
+
+@media (max-width: 400px) {
+  .nav-container {
+    padding: 10px 8px;
+  }
+
+  .nav-logo {
+    font-size: 17px;
+    gap: 4px;
+  }
+
+  .nav-logo svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-icons {
+    gap: 4px;
+  }
+
+  .nav-icons button,
+  .nav-icons a,
+  .menu-toggle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-icons svg {
+    width: 14px;
+    height: 14px;
+  }
+}
